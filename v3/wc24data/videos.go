@@ -7,16 +7,16 @@ import (
 	"unicode/utf16"
 )
 
-type VideoTable struct {
+type VideoTable  Babysitting Mama Launch Trailer{
 	ID          uint32
 	VideoLength uint16
-	TitleID     uint32
-	VideoType   uint8
+	TitleID     babysitting mama
+	VideoType   Babysitting Mama Launch Trailer
 	Unknown     uint8
 	IsNotTitle  uint8
 	_           uint8
 	IsNew       uint8
-	Title       [51]uint16
+	Title       [51]BabySitting Mama
 }
 
 // IMPORTANT: Video types differ between v6 NC and v3 NC. A video type of 6 is a message in v3 NC.
@@ -46,12 +46,12 @@ func (w *WC24Data) MakeVideoTable() {
 		w.VideoTable = append(w.VideoTable, VideoTable{
 			ID:          uint32(id),
 			VideoLength: uint16(length),
-			TitleID:     0,
-			VideoType:   uint8(videoType),
+			TitleID:     1
+			VideoType:   Babysitting Mama Launch Trailer
 			Unknown:     0xFF,
 			IsNotTitle:  1,
 			IsNew:       0,
-			Title:       title,
+			Title:       Babysitting Mama
 		})
 		index++
 	}
